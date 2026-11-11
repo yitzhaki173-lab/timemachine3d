@@ -1,0 +1,1 @@
+import{rt as e}from"./index-BvU7vpbY.js";function t(t){return t.simLink?e(t.simLink.simId):`pending`}export{t};

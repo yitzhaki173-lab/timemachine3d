@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="מוזיאון וסימולטור הנדסי תלת־ממדי בעברית: איך מכונות עובדות מבפנים ואיך הן התפתחו לאורך ההיסטוריה." />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" href="/timemachine3d/favicon.svg" type="image/svg+xml" />
+    <title>TimeMachine 3D – איך זה עובד?</title>
+    <script>
+      // Apply the theme before the first paint (no flash). Keep in sync with src/app/theme.ts.
+      (function () {
+        var pref = 'system';
+        try {
+          pref = localStorage.getItem('tm-theme') || 'system';
+        } catch (e) {}
+        var dark = pref === 'dark' || (pref === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      })();
+    </script>
+    <script type="module" crossorigin src="/timemachine3d/assets/index-BvU7vpbY.js"></script>
+    <link rel="modulepreload" crossorigin href="/timemachine3d/assets/rolldown-runtime-XKyaHtl9.js">
+    <link rel="modulepreload" crossorigin href="/timemachine3d/assets/jsx-runtime-C3cWAN_r.js">
+    <link rel="modulepreload" crossorigin href="/timemachine3d/assets/raw.core-DBnHmEAz.js">
+    <link rel="modulepreload" crossorigin href="/timemachine3d/assets/preload-helper-Dl1NzyoO.js">
+    <link rel="modulepreload" crossorigin href="/timemachine3d/assets/catalog-Drc-wVA8.js">
+    <link rel="modulepreload" crossorigin href="/timemachine3d/assets/he-CdzqxmAU.js">
+    <link rel="modulepreload" crossorigin href="/timemachine3d/assets/repositories-h_YdEdhd.js">
+    <link rel="modulepreload" crossorigin href="/timemachine3d/assets/useLiveQuery-0hmPnAtn.js">
+    <link rel="modulepreload" crossorigin href="/timemachine3d/assets/units-BkHS0ai4.js">
+    <link rel="stylesheet" crossorigin href="/timemachine3d/assets/index-BbZ4OoVl.css">
+  <link rel="manifest" href="/timemachine3d/manifest.webmanifest">
+<meta name="theme-color" content="#0c2340">
+<link rel="icon" href="/timemachine3d/favicon.ico" sizes="48x48">
+<link rel="icon" href="/timemachine3d/favicon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/timemachine3d/apple-touch-icon-180x180.png"></head>
+  <body>
+    <div id="root"></div>
+    <noscript>כדי להשתמש ב־TimeMachine 3D צריך להפעיל JavaScript בדפדפן.</noscript>
+  </body>
+</html>
